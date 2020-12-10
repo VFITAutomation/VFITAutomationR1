@@ -1,6 +1,6 @@
 a = 33
 b = 33
-if b > a:    
+if b > a:
     assert True, ("correct")
 elif a == b:
     assert True, ("Correct")
