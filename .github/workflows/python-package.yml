@@ -44,11 +44,11 @@ jobs:
         pip install pytest
         pip install pytest-cov
         pip install pytest-custom_exit_code              
-        pytest --suppress-no-test-exit-code tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=tests --cov-report=xml --cov-report=html
+        pytest --suppress-no-test-exit-code tests.py --doctest-modules --junitxml=DigitalRetailAutomation/test-results.xml --cov=tests --cov-report=xml --cov-report=html
    
     - name: Upload pytest test results
       uses: actions/upload-artifact@v2
       with:
           name: pytest-results-${{ matrix.python-version }}
-          path: /home/runner/work/VFITAutomationR1/VFITAutomationR1/junit/test-results-${{ matrix.python-version }}.xml
+          path: /home/runner/work/VFITAutomationR1/VFITAutomationR1/DigitalRetailAutomation/test-results-${{ matrix.python-version }}.xml
         # Use always() to always run this step to publish test results when there are test failures    
