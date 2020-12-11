@@ -44,7 +44,7 @@ jobs:
         pip install pytest
         pip install pytest-cov
         pip install pytest-custom_exit_code              
-        pytest --suppress-no-test-exit-code tests.py --doctest-modules --junitxml=test-results.xml  --cov=tests --cov-report=xml --cov-report=html
+        pytest --suppress-no-test-exit-code min_max_test.py --doctest-modules --junitxml=test-results.xml  --cov=tests --cov-report=xml --cov-report=html
    
     - name: Upload pytest test results
       uses: actions/upload-artifact@v2
