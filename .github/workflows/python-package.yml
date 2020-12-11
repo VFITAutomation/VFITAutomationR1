@@ -50,5 +50,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
           name: pytest-results-${{ matrix.python-version }}
-          path: test-results-${{ matrix.python-version }}.xml
+          path: /home/runner/work/VFITAutomationR1/VFITAutomationR1/test-results.xml
         # Use always() to always run this step to publish test results when there are test failures    
